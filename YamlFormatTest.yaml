@@ -1,0 +1,15 @@
+objectsArray:
+  - key1: value
+    key2: value2
+  - key1: value
+    key2: value2
+
+longTextWithoutNewLine: >
+  HKJhkfhwefnsdfs JHDJKSHDjkshshfshf 
+  afldsjfldsjflsjflsjdfl sdjflsf
+  sdflkjslfjsd
+
+longTextWitNewLine: |
+  HKJhkfhwefnsdfs JHDJKSHDjkshshfshf 
+  afldsjfldsjflsjflsjdfl sdjflsf
+  sdflkjslfjsd
