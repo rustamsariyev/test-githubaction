@@ -36,6 +36,4 @@ jobs:
       - name: List Files After Checkout
         run: | 
           pwd
-          ls -la
-          cd github-actions-course
-          ls -ltr
+          ls -l
