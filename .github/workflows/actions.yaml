@@ -33,8 +33,9 @@ jobs:
         uses: actions/checkout@master
         with:
           repository: rustamsariyev/github-actions-course
+      - name: List Files After Checkout
         run: | 
-          pwd 
+          pwd
           ls -la
           cd github-actions-course
           ls -ltr
