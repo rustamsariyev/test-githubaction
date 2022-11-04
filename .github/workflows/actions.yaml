@@ -16,7 +16,7 @@ jobs:
           # git clone git@github:$GITHUB_REPOSITORY
           # git checkout $GITHUB_SHA
       - name: Checkout 
-        uses: rustamsariyev/github-actions-course@master
+        uses: actions/checkout@main
       - name: List Files After Checkout
         run: |
           pwd
@@ -28,3 +28,13 @@ jobs:
           who-to-greet: John
       - name: Log Greeting Time
         run: echo "${{ steps.greet.outputs.time }}"
+      
+      - name: Check out my other public repo
+        uses: actions/checkout@master
+        with:
+          repository: rustamsariyev/github-actions-course
+        run: | 
+          pwd 
+          ls -la
+          cd github-actions-course
+          ls -ltr
